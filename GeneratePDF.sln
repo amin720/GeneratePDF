@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTextSharp_Optimize", "iTextSharp_Optimize\iTextSharp_Optimize.csproj", "{EA33E69E-40BC-4E47-AC80-03568DA19BB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotativa_WKHtml", "Rotativa_WKHtml\Rotativa_WKHtml.csproj", "{32566E22-5987-40D5-9ED5-91E8A3EDEDFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA33E69E-40BC-4E47-AC80-03568DA19BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA33E69E-40BC-4E47-AC80-03568DA19BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA33E69E-40BC-4E47-AC80-03568DA19BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32566E22-5987-40D5-9ED5-91E8A3EDEDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32566E22-5987-40D5-9ED5-91E8A3EDEDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32566E22-5987-40D5-9ED5-91E8A3EDEDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32566E22-5987-40D5-9ED5-91E8A3EDEDFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
