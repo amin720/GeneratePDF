@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Press the link to print a customer list to PDF</h2>
+
+@Html.ActionLink("Print customers", "PrintCustomers", null, new { target = "_blank" })
