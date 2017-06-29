@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="~/Scripts/jquery-1.9.1.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    @*<script type="text/javascript" src="~/Scripts/jspdf.min.js"></script>
+    <script src="~/Scripts/standard_fonts_metrics.js"></script>
+    <script src="~/Scripts/split_text_to_size.js"></script>
+    <script src="~/Scripts/from_html.js"></script>*@
+    <script src="~/Scripts/jspdf.debug.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var specialElementHandlers = {
+            '#editor': function (element, renderer) {
+                return true;
+            }
+        };
+        $('#cmd').click(function () {
+            var doc = new jsPDF();
+            var source = $('#target').html();
+            var specialElementHandlers = {
+                '#bypassme': function (element, renderer) {
+                    return true;
+                }
+            };
+            doc.fromHTML(source, 0.5, 0.5, {
+                'width': 75, 'elementHandlers': specialElementHandlers
+            });
+            doc.output("dataurlnewwindow");
+        });
+    });
+    </script>
+
+
+</body>
+</html>
