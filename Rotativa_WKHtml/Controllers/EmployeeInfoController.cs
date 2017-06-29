@@ -25,7 +25,10 @@ namespace Rotativa_WKHtml.Controllers
 
 		public ActionResult PrintAllReport()
 		{
-			var report = new ActionAsPdf("Index");
+			var report = new ActionAsPdf("Index")
+			{
+				
+			};
 			return report;
 		}
 
