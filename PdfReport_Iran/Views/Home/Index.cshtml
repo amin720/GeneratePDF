@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pdf Report</h2>
+
+<ul>
+    <li>
+        @Html.ActionLink(linkText: "Flush1 (return File)", actionName: "Flush1", controllerName: "Home")
+    </li>
+    <li>
+        @Html.ActionLink(linkText: "Flush2 (InMemory PdfReport)", actionName: "Flush2", controllerName: "Home")
+    </li>
+    <li>
+        @Html.ActionLink(linkText: "Browse (return Redirect)", actionName: "Browse", controllerName: "Home")
+    </li>
+</ul>

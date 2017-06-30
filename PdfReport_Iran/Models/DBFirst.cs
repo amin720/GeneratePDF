@@ -1,0 +1,35 @@
+namespace PdfReport_Iran.Models
+{
+	using System;
+	using System.Data.Entity;
+	using System.ComponentModel.DataAnnotations.Schema;
+	using System.Linq;
+
+	public partial class DBFirst : DbContext
+	{
+		public DBFirst()
+			: base("name=DBFirst")
+		{
+		}
+
+		public virtual DbSet<Employee> Employees { get; set; }
+		public virtual DbSet<Gender> Genders { get; set; }
+		public virtual DbSet<Person> People { get; set; }
+
+		protected override void OnModelCreating(DbModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<Employee>()
+				.Property(e => e.Salary)
+				.HasPrecision(6, 0);
+
+			modelBuilder.Entity<Gender>()
+				.HasMany(e => e.People)
+				.WithRequired(e => e.Gender)
+				.WillCascadeOnDelete(false);
+
+			modelBuilder.Entity<Person>()
+				.HasOptional(e => e.Employee)
+				.WithRequired(e => e.Person);
+		}
+	}
+}
