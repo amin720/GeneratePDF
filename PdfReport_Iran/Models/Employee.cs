@@ -1,21 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
 namespace PdfReport_Iran.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    public partial class Employee
-    {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Id { get; set; }
-
-        public int? DepartmentId { get; set; }
-
-        [Column(TypeName = "numeric")]
-        public decimal Salary { get; set; }
-
-        public virtual Person Person { get; set; }
-    }
+	public class Employee
+	{
+		public int Id { set; get; }
+		public string Name { set; get; }
+		public string Department { set; get; }
+		public decimal Salary { set; get; }
+		public int Age { set; get; }
+		public string WorkedHours { set; get; }
+	}
 }

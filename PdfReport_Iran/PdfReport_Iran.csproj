@@ -79,6 +79,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -111,6 +112,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\test.txt" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -125,7 +127,20 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\A.Afsaneh.ttf" />
+    <Content Include="App_Data\doc_first.pdf" />
+    <Content Include="App_Data\doc_first.odt" />
+    <Content Include="App_Data\PdfHeaderTemplate.pdf" />
+    <Content Include="fonts\irsans.ttf" />
+    <Content Include="App_Data\AcroFormSample.odt" />
+    <Content Include="App_Data\AcroFormSample.pdf" />
+    <Content Include="App_Data\PdfHeaderTemplate.odt" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\01.png" />
+    <Content Include="Images\02.png" />
+    <Content Include="Images\03.png" />
+    <Content Include="Images\04.png" />
+    <Content Include="Images\05.png" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -141,23 +156,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\People\Create.cshtml" />
-    <Content Include="Views\People\Delete.cshtml" />
-    <Content Include="Views\People\Details.cshtml" />
-    <Content Include="Views\People\Edit.cshtml" />
-    <Content Include="Views\People\Index.cshtml" />
-    <Content Include="Views\Employees\Create.cshtml" />
-    <Content Include="Views\Employees\Delete.cshtml" />
-    <Content Include="Views\Employees\Details.cshtml" />
-    <Content Include="Views\Employees\Edit.cshtml" />
-    <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -165,6 +168,17 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="PDFReport\AcroFormTemplate.cs" />
+    <Compile Include="PDFReport\AppPath.cs" />
+    <Compile Include="PDFReport\CustomFooter.cs" />
+    <Compile Include="PDFReport\CustomHeader.cs" />
+    <Compile Include="PDFReport\CustomHeaderDoc.cs" />
+    <Compile Include="PDFReport\CustomHeaderFooterPdfReport.cs" />
+    <Compile Include="PDFReport\HtmlHeaderRtl.cs" />
+    <Compile Include="PDFReport\IList.cs" />
+    <Compile Include="PDFReport\InlineCustonDoc.cs" />
+    <Compile Include="PDFReport\InlineProvidersPdfReport.cs" />
+    <Compile Include="PDFReport\KhodaDorstBeshe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -179,8 +193,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="PDFReport\" />
+    <Folder Include="Pdf\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Samples\Samples.csproj">

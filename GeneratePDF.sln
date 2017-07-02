@@ -17,15 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PdfReport", "PdfReport", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base Classes", "Base Classes", "{A5FC4837-1B57-4D62-B741-53D7DF8D7A31}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A9119166-B8C4-4353-A1CF-8AB94ED5EB51}"
-	ProjectSection(SolutionItems) = preProject
-		E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\NuGet.Config = E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\NuGet.Config
-		E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\NuGet.exe = E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\NuGet.exe
-		E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\NuGet.targets = E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\NuGet.targets
-		E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\Package.nuspec = E:\Project\Temp\HTML.2.PDF\Pdf_Report\PdfReport-master\PdfReport-master\.nuget\Package.nuspec
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples", "Samples\Samples.csproj", "{33B6848A-0D31-4505-A7B3-551D452BC4BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deleted", "Deleted\Deleted.csproj", "{CF8EF7E7-B462-4532-BF97-7E224230D40C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +77,14 @@ Global
 		{33B6848A-0D31-4505-A7B3-551D452BC4BD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33B6848A-0D31-4505-A7B3-551D452BC4BD}.Release|x86.ActiveCfg = Release|Any CPU
 		{33B6848A-0D31-4505-A7B3-551D452BC4BD}.Release|x86.Build.0 = Release|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Debug|x86.Build.0 = Debug|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Release|x86.ActiveCfg = Release|Any CPU
+		{CF8EF7E7-B462-4532-BF97-7E224230D40C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

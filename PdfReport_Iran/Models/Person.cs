@@ -26,8 +26,6 @@ namespace PdfReport_Iran.Models
         [Required]
         public string Name { get; set; }
 
-        public virtual Employee Employee { get; set; }
-
         public virtual Gender Gender { get; set; }
     }
 }

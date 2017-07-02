@@ -18,7 +18,7 @@ namespace PdfReportSamples.CustomHeaderFooter
         {
             if (_image == null) //cache is empty
             {
-                var templatePath = System.IO.Path.Combine(AppPath.ApplicationPath, "data\\PdfHeaderTemplate.pdf");
+                var templatePath = System.IO.Path.Combine(AppPath.ApplicationPath, "App_Data\\PdfHeaderTemplate.pdf");
                 _image = PdfImageHelper.GetITextSharpImageFromPdfTemplate(pdfWriter, templatePath);
             }
 
